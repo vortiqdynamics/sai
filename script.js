@@ -40,12 +40,17 @@
     });
   });
 
+<<<<<<< HEAD
   // Guided finder: collects answers and passes structured data directly to WhatsApp and quote page
+=======
+  // Guided finder
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
   const finder = document.getElementById('finderCard');
   if (finder) {
     const stepViews = [...finder.querySelectorAll('.finder-step')];
     const progress = document.getElementById('progressBar');
     const stepPills = document.querySelectorAll('.finder-steps span');
+<<<<<<< HEAD
     const finderWhatsAppBtn = document.getElementById('finderWhatsAppBtn') || finder.querySelector('a[href*="wa.me"]');
     const finderQuoteBtn = document.getElementById('finderQuoteBtn') || finder.querySelector('a[href*="contact.html"]');
 
@@ -84,10 +89,13 @@
       }
     };
 
+=======
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
     const setStep = (step) => {
       stepViews.forEach((view) => view.classList.toggle('active', Number(view.dataset.step) === step));
       if (progress) progress.style.width = `${Math.max(25, step * 25)}%`;
       stepPills.forEach((pill, index) => pill.classList.toggle('active', index < step));
+<<<<<<< HEAD
       if (step === 4) {
         updateFinderLinks();
       }
@@ -186,6 +194,17 @@
     }
   };
 
+=======
+    };
+    finder.querySelectorAll('[data-next]').forEach((button) => {
+      button.addEventListener('click', () => setStep(Number(button.dataset.next)));
+    });
+  }
+
+  // Quote form demo handler. Replace with a real API/CRM endpoint before launch.
+  const form = document.getElementById('quoteForm');
+  const formMessage = document.getElementById('formMessage');
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
   form?.addEventListener('submit', (event) => {
     event.preventDefault();
     if (!form.checkValidity()) {
@@ -193,6 +212,7 @@
       return;
     }
     const data = Object.fromEntries(new FormData(form).entries());
+<<<<<<< HEAD
     try {
       localStorage.setItem('energyNextLeadDraft', JSON.stringify({ ...data, createdAt: new Date().toISOString() }));
     } catch (_) {}
@@ -219,6 +239,12 @@
       const text = buildWhatsAppMessage(data);
       openWhatsApp(text);
     }
+=======
+    localStorage.setItem('voltivaLeadDraft', JSON.stringify({ ...data, createdAt: new Date().toISOString() }));
+    formMessage.textContent = 'Thanks — your enquiry has been captured in this demo. Connect the handler to your backend/CRM to send it to the sales team.';
+    formMessage.classList.add('show');
+    form.reset();
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
   });
 
   // Gentle reveal for major cards.

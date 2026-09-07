@@ -704,6 +704,7 @@ h3 {
     border-radius: 22px;
     overflow: hidden;
     position: relative;
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     box-shadow: 0 16px 40px rgba(20, 30, 24, .04);
@@ -713,6 +714,10 @@ h3 {
 .solution-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 22px 48px rgba(20, 30, 24, .09);
+=======
+    min-height: 450px;
+    box-shadow: 0 16px 40px rgba(20, 30, 24, .04)
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .solution-tag {
@@ -727,6 +732,7 @@ h3 {
 }
 
 .solution-visual {
+<<<<<<< HEAD
     height: 220px;
     position: relative;
     overflow: hidden;
@@ -755,6 +761,16 @@ h3 {
     display: flex;
     flex-direction: column;
     flex: 1;
+=======
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #dfe9db, #eff4ed)
+}
+
+.solution-body {
+    padding: 23px
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .solution-body h3 {
@@ -764,7 +780,11 @@ h3 {
 .solution-body p {
     color: #697379;
     font-size: 13px;
+<<<<<<< HEAD
     flex-grow: 1;
+=======
+    min-height: 65px
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .solution-body a,
@@ -982,6 +1002,7 @@ h3 {
     border: 1px solid #dfe5df;
     border-radius: 22px;
     overflow: hidden;
+<<<<<<< HEAD
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1009,10 +1030,14 @@ h3 {
 .product-card:hover > img,
 .product-card:hover .product-image img {
     transform: scale(1.05);
+=======
+    position: relative
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .featured-badge {
     position: absolute;
+<<<<<<< HEAD
     z-index: 3;
     top: 15px;
     left: 15px;
@@ -1020,12 +1045,24 @@ h3 {
     backdrop-filter: blur(8px);
     color: #d6efaa;
     padding: 7px 12px;
+=======
+    z-index: 2;
+    top: 15px;
+    left: 15px;
+    background: #19221c;
+    color: #d6efaa;
+    padding: 7px 10px;
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
     border-radius: 999px;
     font-size: 10px;
     font-weight: 800;
     letter-spacing: .1em;
+<<<<<<< HEAD
     text-transform: uppercase;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+=======
+    text-transform: uppercase
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .product-image {
@@ -1081,10 +1118,14 @@ h3 {
 }
 
 .product-content {
+<<<<<<< HEAD
     padding: 22px;
     display: flex;
     flex-direction: column;
     flex: 1;
+=======
+    padding: 22px
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .mini-kicker {
@@ -1105,8 +1146,12 @@ h3 {
 .product-content p {
     font-size: 13px;
     color: #697379;
+<<<<<<< HEAD
     min-height: 54px;
     flex-grow: 1;
+=======
+    min-height: 62px
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .spec-row {
@@ -1130,6 +1175,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     padding-top: 14px;
+<<<<<<< HEAD
     border-top: 1px solid #e7ebe7;
     margin-top: auto;
     font-weight: 600;
@@ -1138,6 +1184,9 @@ h3 {
 
 .product-link:hover {
     color: var(--green);
+=======
+    border-top: 1px solid #e7ebe7
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .inverter-art {
@@ -1345,11 +1394,17 @@ h3 {
     color: #2a342d
 }
 
+<<<<<<< HEAD
 .choice-grid button:hover,
 .choice-grid button.selected {
     background: #e7f3dc;
     border-color: #5cbf2a;
     color: #1a3014
+=======
+.choice-grid button:hover {
+    background: #e7f3dc;
+    border-color: #bfdb9b
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .recommendation {
@@ -1958,12 +2013,17 @@ h3 {
 }
 
 .contact-main {
+<<<<<<< HEAD
     padding-top: 80px;
     padding-bottom: 90px;
+=======
+    padding-top: 90px
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .contact-grid {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1.12fr;
     gap: 48px;
     align-items: start;
@@ -1988,10 +2048,28 @@ h3 {
     margin-top: 24px;
     display: grid;
     gap: 12px;
+=======
+    grid-template-columns: .95fr 1.05fr;
+    gap: 75px;
+    align-items: start
+}
+
+.contact-info>p {
+    color: #687379;
+    font-size: 15px;
+    max-width: 560px
+}
+
+.contact-cards {
+    margin-top: 28px;
+    display: grid;
+    gap: 12px
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .contact-card {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 44px 1fr;
     gap: 16px;
     padding: 16px 18px;
@@ -2011,10 +2089,23 @@ h3 {
 .contact-icon {
     width: 44px;
     height: 44px;
+=======
+    grid-template-columns: 43px 1fr;
+    gap: 14px;
+    padding: 18px;
+    border: 1px solid #dfe6df;
+    border-radius: 16px
+}
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
     display: grid;
     place-items: center;
     border-radius: 12px;
     background: #e9f3e2;
+<<<<<<< HEAD
     color: #486b1d;
     flex-shrink: 0;
 }
@@ -2022,11 +2113,19 @@ h3 {
 .contact-card strong {
     font-size: 14px;
     color: #121815;
+=======
+    color: #486b1d
+}
+
+.contact-card strong {
+    font-size: 14px
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .contact-card p {
     font-size: 12px;
     color: #707a7f;
+<<<<<<< HEAD
     margin: 4px 0 6px;
     line-height: 1.5;
 }
@@ -2043,11 +2142,21 @@ h3 {
 
 .contact-card a:hover {
     color: #486b1d;
+=======
+    margin: 5px 0
+}
+
+.contact-card a {
+    font-size: 11px;
+    font-weight: 800;
+    color: #29401c
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .contact-trust {
     display: flex;
     gap: 12px;
+<<<<<<< HEAD
     align-items: flex-start;
     margin-top: 14px;
     padding: 14px 16px;
@@ -2077,6 +2186,32 @@ h3 {
     color: #647065;
     margin: 3px 0 0;
     line-height: 1.5;
+=======
+    margin-top: 15px;
+    padding: 16px;
+    border-radius: 15px;
+    background: #f0f5ed
+}
+
+.contact-trust>span {
+    width: 28px;
+    height: 28px;
+    border-radius: 9px;
+    background: #daf0bc;
+    display: grid;
+    place-items: center;
+    color: #3e5e19
+}
+
+.contact-trust strong {
+    font-size: 12px
+}
+
+.contact-trust p {
+    font-size: 11px;
+    color: #6f7973;
+    margin: 3px 0 0
+>>>>>>> 503c4c55fe3c9ca2a3c0273379ea7cb484a9c36a
 }
 
 .quote-form {
